@@ -1,0 +1,8 @@
+<view class="input-group" >
+  <view  wx:if="{{labelText}}" class="label" style="width:{{labelWidth}};text-align:{{labelAlign}};color:{{labelColor}}">
+    <text>{{labelText}}</text>
+  </view>
+  <slot name="label-icon"></slot>
+  <input class="input" id="username" placeholder="{{placeholder}}"
+  type="{{type}}" placeholder-class='placeholder' bindinput="inputchange"></input>
+</view>

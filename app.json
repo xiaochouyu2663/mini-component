@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/index/index",
+    
+    "pages/rich-text/rich-text",
+    "pages/logs/logs" 
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#0091ea",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"customer",
+    "enablePullDownRefresh":false,
+    "backgroundColor":"#f1f1f1",
+    "backgroundTextStyle":"dark"
+  }
+}

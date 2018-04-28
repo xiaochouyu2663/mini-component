@@ -1,0 +1,6 @@
+view{
+  font-size: 28rpx;
+}
+text {
+  line-height: 1.4;
+}

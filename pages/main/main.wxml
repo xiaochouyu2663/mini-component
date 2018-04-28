@@ -1,0 +1,27 @@
+<rich-text nodes="{{nodes}}" />
+<rich-text nodes="{{nodes1}}" />
+<rich-text nodes="{{nodes2}}" />
+<view>
+<Dialog id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </Dialog>
+
+</view>
+<button type="primary" bindtap="showDialog"> ClickMe! </button>
+
+<view>
+<input placeholder="请输入" style="border:1px solid red;height:60rpx;"></input>
+</view>
+ <ws-cell  placeholder="请输入姓名" placeholder-style="{{dess.style}}" label-text="用户名" label-width="200rpx" label-align="right" label-color="#000">
+       <image  slot="label-icon" mode="widthFix" style="width:40rpx;margin-top:16rpx"  src="/static/images/logo.png"></image>    
+</ws-cell>
+
+<ws-cell id="user" bindinput="onMyEvent"  class="input-group" placeholder="请输入姓名" type="text">
+       <image slot="label-icon" mode="widthFix" style="width:40rpx;margin-top:16rpx" src="/static/images/logo.png"></image>    
+</ws-cell> 
+

@@ -1,0 +1,28 @@
+<view>
+  <rich-text nodes="{{nodes}}" wx:if="{{canIUse}}"></rich-text>   
+</view>   
+<view style="margin-top:20px;">
+   <progress percent="80.33" activeColor="#f00" backgroundColor="#ff0" show-info active></progress>
+</view>
+
+<map id="map" scale="16" longitude="{{location.longitude}}" latitude="{{location.latitude}}" markers="{{markers}}" controls="{{controls}}" polyline="{{polyline}}" 
+show-location></map>
+
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+<template is="msgItem" data="{{...item}}"/>
+ <template is="msgItem" data="{{...item1}}"/>
+ <wxs module="demo">
+  var a = '1';
+  console.log(a);
+  module.exports = {
+    a: a
+    }
+ </wxs>
+
+ <view>这类似是vxs定义的内容{{demo.a}}</view>
+ <view>这类似是vxs定义的内容</view>

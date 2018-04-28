@@ -1,0 +1,22 @@
+.input-group {
+  display: -webkit-flex;
+  display: flex;
+}
+.label {
+  padding: 0 10rpx;
+  line-height: 1.4rem;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.label text {
+  line-height: 80rpx;
+}
+.label image {
+  width: 100%;
+}
+.input {
+  flex:1; 
+  height: 80rpx;
+  padding: 0 10rpx;
+}
