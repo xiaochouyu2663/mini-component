@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "Dialog": "/component/Dialog/Dialog",
-    "ws-cell":"/component/ws-cell/ws-cell"
+    "ws-input":"/component/ws-input/ws-input"
   }
 }
